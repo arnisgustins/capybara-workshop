@@ -1,10 +1,15 @@
 Feature: Demo Feature
 
-    Scenario: Open SignUp Page
+    Scenario: Fill and close Signup page
         Given I am on Appimation home page
-        When I open Try now
-        Then I close Try now
+        When I open Signup 
+        Then I fill Signup
+        Then I close Signup
 
-    Scenario: I can send contact us message
+    Scenario: Sign in invalid info
         Given I am on Appimation home page
-        When I enter "lalalalla" and "namemname" in name in contact us
+        When I open Sign in
+        Then I try to Sign in
+        
+
+    
