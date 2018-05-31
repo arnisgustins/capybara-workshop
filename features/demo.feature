@@ -1,9 +1,11 @@
 Feature: Demo Feature
 
-    Scenario: Open SignUp Page
+   
+    Scenario: Fill and close Signup page
         When I am on Appimation home page
-        Then I validate Try now
+        Then Then I Open, Fill and close Sign Up page 
 
-    Scenario: I can send contact us message
-        Given I am on Appimation home page
-        When I submit contact form
+    Scenario: Sign in invalid info
+        When I am on Appimation home page
+        Then I open Sign In and try to login
+        

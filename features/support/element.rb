@@ -17,6 +17,12 @@ class Element
     end
   end
 
+  def isClosed
+    if visible?
+      raise "element is not closed"
+    end
+  end
+
   def click
     find.click
   end
